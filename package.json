@@ -1,0 +1,30 @@
+{
+  "name": "audition-assignment",
+  "version": "1.0.0",
+  "description": "MERN app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "Andrey Skorodumov <andrey.sskoro@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "config": "^3.3.7",
+    "nodemon": "^2.0.16"
+  }
+}
